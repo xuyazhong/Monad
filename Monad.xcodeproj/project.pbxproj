@@ -41,6 +41,8 @@
 		870394311EBB83310066DA82 /* MapEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapEnum.swift; sourceTree = "<group>"; };
 		870394331EBB842D0066DA82 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		870394351EBC4AE20066DA82 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		87D2C64E1EE698C600D49BC8 /* MyPlayground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground2.playground; sourceTree = "<group>"; };
+		87D2C64F1EE6996B00D49BC8 /* MyPlayground3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground3.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,8 @@
 		870394011EBAD2CE0066DA82 = {
 			isa = PBXGroup;
 			children = (
+				87D2C64F1EE6996B00D49BC8 /* MyPlayground3.playground */,
+				87D2C64E1EE698C600D49BC8 /* MyPlayground2.playground */,
 				8703942A1EBB7EF90066DA82 /* MyPlayground.playground */,
 				8703940C1EBAD2CE0066DA82 /* Monad */,
 				8703940B1EBAD2CE0066DA82 /* Products */,

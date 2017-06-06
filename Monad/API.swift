@@ -20,7 +20,7 @@ class API {
 
 extension API {
     
-    func star(ok: @escaping successBlock,failed fail: @escaping failureBlock) {
+    func star(ok: @escaping successBlock, fail: @escaping failureBlock) {
         let url = "http://alpha-api.fishtrip.cn/api/v1/houses/star"
         Alamofire.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: nil)
             .responseString(completionHandler: { (response) in
