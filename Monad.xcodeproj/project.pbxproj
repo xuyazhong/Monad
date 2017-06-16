@@ -13,12 +13,10 @@
 		870394151EBAD2CE0066DA82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 870394141EBAD2CE0066DA82 /* Assets.xcassets */; };
 		870394181EBAD2CE0066DA82 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 870394161EBAD2CE0066DA82 /* LaunchScreen.storyboard */; };
 		870394201EBAE9FD0066DA82 /* Optional+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8703941F1EBAE9FD0066DA82 /* Optional+Extension.swift */; };
-		870394221EBB0C2A0066DA82 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870394211EBB0C2A0066DA82 /* API.swift */; };
 		8703942C1EBB7FFC0066DA82 /* Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8703942B1EBB7FFC0066DA82 /* Demo.swift */; };
 		870394301EBB82E40066DA82 /* NormalEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8703942F1EBB82E40066DA82 /* NormalEnum.swift */; };
 		870394321EBB83310066DA82 /* MapEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870394311EBB83310066DA82 /* MapEnum.swift */; };
 		870394341EBB842D0066DA82 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870394331EBB842D0066DA82 /* Person.swift */; };
-		870394361EBC4AE20066DA82 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870394351EBC4AE20066DA82 /* Model.swift */; };
 		AFB8F9EA3287587914009098 /* Pods_Monad.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64777D76B87CC8D0F0E9C481 /* Pods_Monad.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,13 +32,11 @@
 		870394171EBAD2CE0066DA82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		870394191EBAD2CE0066DA82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8703941F1EBAE9FD0066DA82 /* Optional+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Optional+Extension.swift"; sourceTree = "<group>"; };
-		870394211EBB0C2A0066DA82 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		8703942A1EBB7EF90066DA82 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; };
 		8703942B1EBB7FFC0066DA82 /* Demo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Demo.swift; sourceTree = "<group>"; };
 		8703942F1EBB82E40066DA82 /* NormalEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NormalEnum.swift; sourceTree = "<group>"; };
 		870394311EBB83310066DA82 /* MapEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapEnum.swift; sourceTree = "<group>"; };
 		870394331EBB842D0066DA82 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		870394351EBC4AE20066DA82 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		87D2C64E1EE698C600D49BC8 /* MyPlayground2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground2.playground; sourceTree = "<group>"; };
 		87D2C64F1EE6996B00D49BC8 /* MyPlayground3.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground3.playground; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -90,10 +86,8 @@
 				870394161EBAD2CE0066DA82 /* LaunchScreen.storyboard */,
 				870394191EBAD2CE0066DA82 /* Info.plist */,
 				8703941F1EBAE9FD0066DA82 /* Optional+Extension.swift */,
-				870394211EBB0C2A0066DA82 /* API.swift */,
 				8703942B1EBB7FFC0066DA82 /* Demo.swift */,
 				8703942F1EBB82E40066DA82 /* NormalEnum.swift */,
-				870394351EBC4AE20066DA82 /* Model.swift */,
 			);
 			path = Monad;
 			sourceTree = "<group>";
@@ -229,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -239,11 +233,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				870394361EBC4AE20066DA82 /* Model.swift in Sources */,
 				870394101EBAD2CE0066DA82 /* ViewController.swift in Sources */,
 				8703942C1EBB7FFC0066DA82 /* Demo.swift in Sources */,
 				870394201EBAE9FD0066DA82 /* Optional+Extension.swift in Sources */,
-				870394221EBB0C2A0066DA82 /* API.swift in Sources */,
 				870394301EBB82E40066DA82 /* NormalEnum.swift in Sources */,
 				8703940E1EBAD2CE0066DA82 /* AppDelegate.swift in Sources */,
 				870394341EBB842D0066DA82 /* Person.swift in Sources */,
@@ -373,6 +365,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = Monad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fishtrip.Monad;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -387,6 +380,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HLBKRB67RG;
 				INFOPLIST_FILE = Monad/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.fishtrip.Monad;
 				PRODUCT_NAME = "$(TARGET_NAME)";

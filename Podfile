@@ -8,8 +8,9 @@ def public_pods
     pod 'AlamofireObjectMapper'
     pod 'EVReflection','3.6.0'
     pod 'SwiftyJSON'
-    pod 'HandyJSON'
-    
+	pod 'RxAlamofire'
+    pod 'RxCocoa'
+
 end
 
 target 'Monad' do
